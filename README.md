@@ -24,12 +24,12 @@ Installation
 
     bash
 
-git clone https://github.com/your-username/donation-tracking-system.git
+git clone https://github.com/your-username/ia_galantbits.git
 
 Install the required dependencies using pip:
 
 
-git clone https://github.com/your-username/donation-tracking-system.git
+git clone https://github.com/your-username/ia_galantbits.git
 
 Create a MySQL database named association with appropriate tables to store donor information.
 
