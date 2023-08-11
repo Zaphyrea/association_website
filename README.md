@@ -24,13 +24,12 @@ Installation
 
     bash
 
-git clone https://github.com/your-username/ia-galantbits.git
+git clone https://github.com/your-username/donation-tracking-system.git
 
 Install the required dependencies using pip:
 
-bash
 
-pip install flask mysql-connector-python
+git clone https://github.com/your-username/donation-tracking-system.git
 
 Create a MySQL database named association with appropriate tables to store donor information.
 
@@ -45,9 +44,9 @@ Run the Flask application:
 
 bash
 
-    python app.py
+python app.py
 
-    Access the application in your web browser at http://localhost:5000.
+Access the application in your web browser at http://localhost:5000.
 
 Usage
 
