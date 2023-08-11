@@ -26,7 +26,7 @@ The AI Galantbits is a web application built using Flask that allows users to su
 
 Clone the repository:
 
-    git clone https://github.com/your-username/ia_galantbits.git
+    git clone https://github.com/your-username/association_website.git
 
 
 Install the required dependencies using pip:
