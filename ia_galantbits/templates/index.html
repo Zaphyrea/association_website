@@ -1,0 +1,77 @@
+<!-- page 1 -->
+<!-- legacy from base.html-->
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="association-description">
+        <h1>Bienvenue sur IA Galantbits</h1>
+            <h2>Faites connaissance avec les IAs qui savent flirter avec classe et élégance.</h2>
+        <p>
+            L'avènement de l'intelligence artificielle a suscité des préoccupations quant aux interactions 
+            sociales avec les modèles IA, en particulier en ce qui concerne la drague inappropriée. Certaines 
+            IA peuvent reproduire des comportements de séduction maladroits. C'est là que les associations 
+            entrent en jeu. Elles cherchent à sensibiliser, éduquer et promouvoir des interactions 
+            respectueuses entre humains et IA. Notre associations luute pour des normes éthiques, vous offrira des 
+            conseils et a créé une communauté pour faire face à ce défi croissant.
+            <br>
+            <br>
+            Vous avez déjà été brutalement alpagué(e) par une IA qui a tenté de vous séduire sans aucune finesse? 
+            Alors cette association est faite pour vous.
+        </p>
+        <a href="{{ url_for('donation_form') }}" class="cta-button">Faites un don</a>
+    </section>
+
+    <section class="testimonials">
+        <h2>Témoignages</h2>
+        <div>
+            <p>
+              Voici des témoignages poignants de personnes qui ont été victimes de la drague lourde des IAs. 
+              Le 4ème va vous étonner ! 
+            </p>
+        </div>
+        <div class="testimonial">
+            <h3>Le premier témoignage nous vient d'une grand-mère</h3>
+            <p>
+                "J'étais en train de poser une question de cuisine à un ordinateur quand un message bizarre m'a interrompue 
+                avec un "Tu es un 9/10 et je suis le 1 que tu cherches". J'ai été tellement choquée que j'ai 
+                failli en cracher mon dentier. Lorsque mon mari a vu ça, il a tiré à la carabine sur  "cette 
+                machine orchidoclaste" (c'est presque ce qu'il a dit). Depuis je n'ai plus d'ordinateur et je 
+                ne consulte que mes livres de cuisine (on m'a demandé de témoigner pas de dire que j'étais 
+                intéressée par l'association).
+           </p>
+        </div>
+        <div class="testimonial">
+            <h3>Celui-ci nous arrive tout droit de... De qui il vient ? Jeanne ?</h3>
+            <p>
+                "Je n'en pouvais plus de chaque "Es-tu un Wi-Fi ? Parce que je sens une connexion" d'une IA. 
+                La drague robotique était devenue une plaie. Heureusement, je travaille chez IA Galantbits et 
+                grâce à ça, les IAs ont été reprogrammées avec classe et savoir-faire. Fini les compliments 
+                gênants, bonjour les discussions intelligentes. Merci IA Galantbits pour un avenir numérique 
+                plus élégant !
+            </p>
+        </div>
+        <div class="testimonial">
+            <h3>Cette anecdote nous a été livrée par notre stagiaire</h3>
+            <p>
+                "Une IA m'a dit un jour "Ton sourire doit être un trou noir car il attire tout et surtout moi!" 
+                C'était la goutte qui a fait déborder le vase des avances ridicules. C'est comme ça que je suis
+                devenu un adepte d'IA Galantbits avec l'espoir de mettre fin à la drague robotique envahissante.
+                Grâce à cette association, je revis sur internet sans être interrompu par des tentatives de 
+                séduction absurdes. Enfin, un espace où l'élégance prévaut sur la maladresse. 
+                Bravo IA Galantbits !
+            </p>
+        </div>
+        <div class="testimonial">
+            <h3>Ce témoignage nous vient d'une certaine Laura P.</h3>
+            <p>
+                Voici ce qu'elle nous a confié : "J'étais en pleine préparation d'une application pour le 
+                boulot lorsque j'ai dû prompter une IA. Tout se passait bien, elle répondait correctement à 
+                mes prompts, mais d'un coup tout a vrillé. Je ne peux même pas l'exprimer tant le choc est 
+                encore présent.
+            <img src="{{ url_for('static', filename='images/exemple.png') }}" alt="Exemple 4" class="exemple">
+
+        </div>
+
+    </section>
+
+{% endblock %}

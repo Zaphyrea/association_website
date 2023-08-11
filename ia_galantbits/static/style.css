@@ -1,0 +1,343 @@
+
+/* HEADER */
+/* Header style */
+header {
+    background-image: linear-gradient(to bottom right, #5fcccf, #2b1c3b98);
+    color: #eee;
+    padding: 10px; /* intern space */
+    width: 100%;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-around; /* Spread items with more centering */
+}
+
+
+
+
+/* BUTTONS */
+/* Buttons in header : Withdraw underlines for navigation buttons */
+.nav-links a {
+    text-decoration: none;
+}
+
+/* Buttons in header : Add space between header buttons */
+.nav-links button {
+    background-image: linear-gradient(to bottom right, #6ccf5f, #2b1c3b98);
+    color :#2080ce;
+    margin-right: 150px; 
+    font-size: 25px;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 15px; /* round angles */
+}
+/* Buttons in header : Change color of buttons when the cursor goes on */
+nav.nav-links button:hover {
+    background-color: #7e6b8e;
+}
+
+
+/* Button grants first page */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #06a84f;
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #04993a;
+}
+
+
+
+/* BODY */
+/* footer and header are impacted by moves here */
+body {
+    background-image: linear-gradient(to bottom right, #5fcccf, #2b1c3b98, #5fcccf);
+    margin : 0;
+
+    }
+
+/* Adjust content placement (without header and footer) */
+.content {
+    margin : 30px;
+}
+
+
+
+
+/* TITLES */
+h1 {
+    font-family: Garamond;
+    border: 2px #dee941 solid;
+    color: rgb(9, 95, 13);
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    }
+
+h2  { font-family: Garamond; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 22px; 
+    } 
+
+h3  { font-family: Garamond; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 22px; 
+}
+
+
+
+
+/* PARAGRAPHS */
+.bordered-paragraph {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+
+
+/* LABEL */
+label {
+    font: 1rem garamond;
+  }
+  
+.sample {
+    font: 1,5rem 'Garamond';
+    font-style: oblique 23deg;
+}
+
+
+
+
+
+/* FOOTER*/
+/* 1st footer style */
+footer {
+    width: 100%;
+    background-color: #33333385;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+.contact-info {
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.contact-info h4 {
+    color: #eee;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* 2nd footer style for copyright part*/
+footer .copyright {
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+
+
+
+
+/* CONTENTS */
+/* Styles for testimonials */
+.testimonials {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    background-color: #bdbbbbd7;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+
+/* CONTAINERS*/
+/* Styling for the container */
+.donation-grant {
+    background-color: #7f98c0d0;
+    border: 2px solid #8ca1c2;
+    border-radius: 3% 20% 20% 13%;
+    margin : 10px;
+    padding: 30px;
+}
+
+/* Styling for the headings inside the container */
+.donation-grant h2 {
+    font-family: 'Garamond';
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+/* Styling for the list items inside the container */
+.donation-grant ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.donation_grant li {
+    margin-bottom: 15px;
+}
+
+/* Styling for the paragraph inside the container */ 
+.donation-grant p {
+    font-family: 'Garamond';
+    font-size: 16px;
+    color: #3f3a3a;
+}
+
+/* Total amount style */
+/* Container */
+.total-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* Espacement intérieur du conteneur */
+}
+/* Amount */
+.total-amount {
+    background-color: #e68a12e0; /* Couleur d'arrière-plan */
+    color: #fff;
+    padding: 5px 10px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    margin-left: 10px; /* Marge à gauche pour séparer de l'image */
+}
+
+
+
+
+/* TABLES STYLES */
+/* Table for inputs */
+.donor-form-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove borders between cells */
+}
+
+.donor-form-table th {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 8px;
+    font-family: 'Garamond';
+    font-size: 18px;
+    color: #333333;
+    text-align: left;
+}
+
+.donor-form-table td {
+    padding: 10px;
+}
+
+.donor-form-table label {
+    display: block;
+    font-weight: bold;
+}
+
+.donor-form-table input {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Table of donors */
+table.donor-info-table th.bordered {
+    border-collapse: collapse;
+    width: auto;
+    background-color: #06a84fd0;
+    border: 4px solid hsl(118, 95%, 25%);
+    padding: 8px;
+    font-family: 'Garamond';
+    font-size: 18px;
+    color: #333333;
+}
+
+/* Style for the last donor */
+table.donor-info-table tbody tr:first-child {
+    background-color: #51a0e94b; /* Background color*/
+    color: #fff; /* Text color for contrast */
+}
+table.donor-info-table tr:first-child td {
+    border: 4px solid hsl(218, 51%, 33%);
+}
+
+/* Style for donors other than the last one */
+table.donor-info-table tr:not(:first-child) {
+    background-color: #f5f5f5c2; 
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+
+/* Apply a border on 2 sides */
+.bordered {
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+
+
+
+
+/* IMAGES*/
+/* logo */
+.logo {
+    width: 250px;
+    height: 150px;
+    background-image: url('../images/logo.png'); 
+    background-size: cover;
+    }
+
+.exemple {
+    width: 1000px;
+    height: 150px;
+    background-image: url('../images/exemple.png'); 
+    background-size: cover;
+    }
+
+.james {
+    width: 140px;
+    height: 140px;
+    background-image: url('../images/james.gif'); 
+    background-size: cover;
+    }

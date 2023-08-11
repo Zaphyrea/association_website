@@ -1,0 +1,45 @@
+ <!-- head isn't for the user -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+
+</head>
+
+<!-- header is for every informations we want on the upper side of the pages -->
+<body>
+    <header>
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+            <nav class="nav-links">
+                <button><a href="{{url_for('index')}}" class="nav-link">Accueil</a></button>
+                <button><a href="{{url_for('donation_form')}}" class="nav-link">Faire un don</a></button>
+                <button><a href="{{url_for('donation_informations')}}" class="nav-link">Informations dons</a></button>
+            </nav>
+    </header>
+    
+<!-- This corresponds to the content of the other pages -->
+        <article class="content">
+            {% block content %} {% endblock %}
+        </article>
+
+<!-- footer-->
+<footer>
+    <div class="contact-info">
+        <h3>Contactez-nous</h3>
+        <p><strong>Email:</strong> contact@iagalantbits.com</p>
+        <p><strong>Adresse:</strong> 42 Rue des IAs galantes, FRANCE (on vous laisse chercher)</p>
+        <p><strong>Téléphone:</strong> +XX 01 23 45 67 89</p>
+    </div>
+    <p class = "copyright"> 2023 IA Galantbits. All lefts reserved (because rights are overrated).</p>
+    <p>Développé par WebIA</p>
+</footer>
+
+
+</body>
+</html>
+
+

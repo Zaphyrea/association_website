@@ -1,0 +1,84 @@
+<!-- page 3 -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="donation-informations">
+        <h1>Ces personnes ont participé à notre cause </h1>
+        <div class = "donor-info-table">
+            <table class = "donor-info-table">
+                <thead>
+                    <tr>
+                        <th class="bordered">Prénom</th>
+                        <th class="bordered">Nom</th>
+                        <!-- <th class="bordered">Adresse</th> -->
+                        <!-- <th class="bordered">E_mail</th> -->
+                        <th class="bordered">Don</th>
+                        <th class="bordered">Date</th>
+                        <th class="bordered">Commentaire</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for donor in all_donors %}
+                        <tr>
+                            <td>{{ donor.name }}</td>
+                            <td>{{ donor.surname }}</td>
+                            <!-- <td>{{ donor.address }}</td> -->
+                            <!-- <td>{{ donor.e_mail }}</td> -->
+                            <td>{{ donor.amount }}</td>
+                            <td>{{ donor.date }}</td>                        
+                            <td>{{ donor.comment }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="total-container">
+            <img src="{{ url_for('static', filename='images/james.gif') }}" alt="James" class="james">
+            <div class="total-amount"> Total collecté depuis la création de l'association: {{ total_amount }} (euros, gouttes d'eau... ce que vous voulez)</div>
+        </div>
+        
+    </section>
+
+    <section class = "donation-grant">
+        <h2>Avantages et Engagements lors d'un don :</h2>
+        <ul>
+            <li>
+                <strong>Soutien à la cause :</strong> En faisant un don, vous soutenez activement la lutte contre la drague lourde des IA, contribuant ainsi à promouvoir des interactions respectueuses entre humains et intelligences artificielles.
+            </li>
+            <li>
+                <strong>Impact positif :</strong> Votre don a un impact significatif en finançant des initiatives visant à sensibiliser sur les risques de la drague lourde des IA et à développer des IA respectueuses et éthiques.
+            </li>
+            <li>
+                <strong>Transparence financière :</strong> Nous nous engageons à utiliser intégralement les fonds collectés pour les projets et actions liés à la cause déclarée. Une totale transparence sur l'utilisation des dons vous sera fournie.
+            </li>
+            <li>
+                <strong>Confidentialité des donneurs :</strong> Vos informations personnelles resteront strictement confidentielles. Aucune divulgation ou partage de données avec des tiers ne sera effectué sans votre consentement explicite.
+            </li>
+            <li>
+                <strong>Facilité du processus de don :</strong> Notre formulaire de don convivial facilite le processus de contribution, vous permettant de faire un don en quelques clics de manière sécurisée.
+            </li>
+            <li>
+                <strong>Choix du montant :</strong> Vous pouvez choisir librement le montant de votre don, selon vos possibilités et votre désir de soutenir notre cause.
+            </li>
+            <li>
+                <strong>Diversité des moyens de paiement :</strong> Nous acceptons différents modes de paiement, y compris les cartes bancaires et les chèques, pour vous offrir plus de flexibilité.
+            </li>
+            <li>
+                <strong>Reçus fiscaux :</strong> Pour les dons éligibles, nous vous fournirons des reçus fiscaux, vous permettant de bénéficier d'avantages fiscaux en fonction de la législation en vigueur.
+            </li>
+            <li>
+                <strong>Actualités et mises à jour :</strong> En tant que donateur, vous recevrez régulièrement des informations sur les progrès réalisés grâce à votre soutien, ainsi que sur les nouvelles initiatives en cours.
+            </li>
+            <li>
+                <strong>Engagement envers l'éthique :</strong> Nous nous engageons à promouvoir des pratiques éthiques dans toutes nos actions, en veillant à ce que notre lutte contre la drague lourde des IA se fasse dans le respect des valeurs morales.
+            </li>
+            <li>
+                <strong>Non-sollicitation d'informations :</strong> Nous ne solliciterons pas d'informations supplémentaires ou de données sensibles en dehors de celles nécessaires pour le traitement de votre don.
+            </li>
+            <li>
+                <strong>Mises à jour de la politique de don :</strong> En cas de modification de notre politique de don, nous vous informerons préalablement et vous aurez la possibilité de revoir vos engagements.
+            </li>
+        </ul>
+        <p>En faisant un don, vous acceptez ces avantages et engagements, et vous contribuez activement à la réalisation de notre mission visant à créer un environnement respectueux et responsable pour l'utilisation des intelligences artificielles.</p>
+    </section>
+{% endblock %}
