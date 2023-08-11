@@ -5,6 +5,7 @@ AI Galantbits website (caritative fictive association)
 
 The AI Galantbits is a web application built using Flask that allows users to submit donation information through a form and view donation-related information. The application stores donor details and donation amounts in a MySQL database.
 
+
 # Features
 
     Donation Form: Users can submit their donation details including name, address, email, amount, and an optional comment.
@@ -12,12 +13,14 @@ The AI Galantbits is a web application built using Flask that allows users to su
     Thank You Page: After submitting a donation, users are directed to a thank you page.
     Conditions of Use: A page with conditions of use is available for users to read.
 
+
 # Requirements
 
     Python 3.x
     Flask
     MySQL Connector (mysql-connector-python)
     CSS styles for UI
+
 
 # Installation
 
@@ -58,6 +61,7 @@ Access the application in your web browser at http://localhost:5000.
 
     You can also explore the "Conditions of Use" page to understand the terms.
 
+
 # Structure
 
     app.py: Main Flask application script.
@@ -65,8 +69,9 @@ Access the application in your web browser at http://localhost:5000.
     models/data.py: Class for interacting with the database (add donor, get all donors, total amount).
     templates/: Contains HTML templates for different pages.
     static/: Contains CSS files for styling.
-    static/images
+    static/images : Contains images used by CSS
 
-Contributions
+
+# Contributions
 
 Contributions are welcome! Feel free to open issues and submit pull requests for any enhancements or bug fixes.
