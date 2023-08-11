@@ -1,9 +1,9 @@
 # association_website
 A basic website for a caritative association
 
-IA Galantbits website (caritative fictive association)
+AI Galantbits website (caritative fictive association)
 
-The IA Galantbits is a web application built using Flask that allows users to submit donation information through a form and view donation-related information. The application stores donor details and donation amounts in a MySQL database.
+The AI Galantbits is a web application built using Flask that allows users to submit donation information through a form and view donation-related information. The application stores donor details and donation amounts in a MySQL database.
 Features
 
     Donation Form: Users can submit their donation details including name, address, email, amount, and an optional comment.
