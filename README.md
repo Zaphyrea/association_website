@@ -20,33 +20,30 @@ Requirements
 
 Installation
 
-    Clone the repository:
+Clone the repository:
 
-    bash
+    git clone https://github.com/your-username/ia_galantbits.git
 
-git clone https://github.com/your-username/ia_galantbits.git
 
 Install the required dependencies using pip:
 
+    pip install -r requirements.txt
 
-git clone https://github.com/your-username/ia_galantbits.git
 
 Create a MySQL database named association with appropriate tables to store donor information.
 
 Update the database connection details in the models/connection.py file:
 
-python
-
-class Connection:
+    class Connection:
     # Update __USER, __PWD, __HOST, __PORT, and __DB with your database credentials
 
 Run the Flask application:
 
-bash
+    python app.py
 
-python app.py
 
 Access the application in your web browser at http://localhost:5000.
+
 
 Usage
 
